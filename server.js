@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Serve the form page (ensure you have a form.html file in the public folder)
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/form/form.html');
+  res.sendFile(__dirname + 'https://amanhoster.github.io/form2/form/form.html');
 });
 
 // Handle form submission
@@ -26,7 +26,7 @@ app.post('/submit', (req, res) => {
     console.log(`Address: ${address}`);
     console.log(`Problem: ${problem}`);
     
-    res.send("Form submitted successfully! Check terminal for data.");
+    res.send("Form submitted successfully! we will announce soon!");
 });
 
 // Start the server
